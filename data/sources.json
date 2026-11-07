@@ -1,0 +1,478 @@
+{
+  "notice": "Bibliographic grounding is not passage-level verification. See individual verification fields. No source text was copied into the examples.",
+  "checked_date": "2026-11-06",
+  "thinkers": [
+    {
+      "id": "krishna",
+      "name": "Krishna as presented in the Bhagavad Gita",
+      "references": [
+        "Bhagavad Gita, chapters 2, 3, 6, 18"
+      ],
+      "concepts": [
+        "karma yoga",
+        "dharma",
+        "equanimity"
+      ],
+      "interpretation_caveat": "A sacred dialogue with diverse Vedanta and other interpretations; Krishna is not reduced to a productivity coach.",
+      "reference_url": "https://heritage.iitk.ac.in/gitasupersite",
+      "verification": "reference_portal_opened_not_all_verses_checked"
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "references": [
+        "Nicomachean Ethics, books II, VI, VIII-IX"
+      ],
+      "concepts": [
+        "virtue",
+        "practical wisdom",
+        "friendship"
+      ],
+      "interpretation_caveat": "Virtue is context-sensitive, not an arithmetic middle; his historical exclusions are not endorsed.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "nietzsche",
+      "name": "Friedrich Nietzsche",
+      "references": [
+        "On the Genealogy of Morality, essay I",
+        "The Gay Science, sections 290 and 341"
+      ],
+      "concepts": [
+        "ressentiment",
+        "self-formation",
+        "affirmation"
+      ],
+      "interpretation_caveat": "Interpretations of power and affirmation are contested; self-creation does not imply permission to abuse.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "freud",
+      "name": "Sigmund Freud",
+      "references": [
+        "Remembering, Repeating and Working-Through",
+        "The Ego and the Id"
+      ],
+      "concepts": [
+        "repetition",
+        "defense",
+        "unconscious conflict"
+      ],
+      "interpretation_caveat": "Historically influential interpretations are not established diagnoses or substitutes for current evidence.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "jung",
+      "name": "Carl Jung",
+      "references": [
+        "Two Essays on Analytical Psychology",
+        "The Relations between the Ego and the Unconscious"
+      ],
+      "concepts": [
+        "persona",
+        "shadow",
+        "individuation"
+      ],
+      "interpretation_caveat": "Symbolic readings are hypotheses, not universal codes or proof of supernatural events.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "dostoevsky",
+      "name": "Fyodor Dostoevsky",
+      "references": [
+        "Crime and Punishment",
+        "The Brothers Karamazov, books V-VI"
+      ],
+      "concepts": [
+        "conscience",
+        "responsibility",
+        "suffering"
+      ],
+      "interpretation_caveat": "Fiction stages conflicting voices; a character is not a transparent mouthpiece for the author.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "greene",
+      "name": "Robert Greene",
+      "references": [
+        "The 48 Laws of Power",
+        "Mastery"
+      ],
+      "concepts": [
+        "incentives",
+        "reputation",
+        "apprenticeship"
+      ],
+      "interpretation_caveat": "Popular strategic frameworks and historical anecdotes are not validated universal laws; ethical filters are editorial.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "frankl",
+      "name": "Viktor Frankl",
+      "references": [
+        "Man’s Search for Meaning"
+      ],
+      "concepts": [
+        "meaning",
+        "responsibility",
+        "attitude"
+      ],
+      "interpretation_caveat": "Meaning is not a cure-all; constraints on agency and the need to change avoidable suffering matter.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "schopenhauer",
+      "name": "Arthur Schopenhauer",
+      "references": [
+        "The World as Will and Representation, volume I, books III-IV",
+        "On the Basis of Morality"
+      ],
+      "concepts": [
+        "striving",
+        "aesthetic contemplation",
+        "compassion"
+      ],
+      "interpretation_caveat": "Metaphysical pessimism is not a clinical conclusion or an argument for self-harm.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "pascal",
+      "name": "Blaise Pascal",
+      "references": [
+        "Pensees, fragments on diversion, the wager, and the orders"
+      ],
+      "concepts": [
+        "diversion",
+        "finitude",
+        "faith and reason"
+      ],
+      "interpretation_caveat": "Fragment numbering varies by edition; the wager is not a neutral proof that settles religious pluralism.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "kahneman",
+      "name": "Daniel Kahneman",
+      "references": [
+        "Maps of Bounded Rationality: A Perspective on Intuitive Judgment and Choice, Nobel lecture (2002)"
+      ],
+      "concepts": [
+        "reference dependence",
+        "base rates",
+        "bounded rationality"
+      ],
+      "interpretation_caveat": "Many insights were developed with Amos Tversky and others; a bias label alone does not prove an error.",
+      "reference_url": "https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf",
+      "verification": "official_lecture_search_result_checked_not_full_text_reviewed"
+    },
+    {
+      "id": "sacks",
+      "name": "Oliver Sacks",
+      "references": [
+        "The Man Who Mistook His Wife for a Hat",
+        "An Anthropologist on Mars"
+      ],
+      "concepts": [
+        "lived experience",
+        "adaptation",
+        "personhood"
+      ],
+      "interpretation_caveat": "Narrative cases are not representative datasets; respect privacy and do not infer diagnoses from literary analogies.",
+      "reference_url": "https://www.oliversacks.com/oliver-sacks-books/the-man-who-mistook-his-wife-for-a-hat/",
+      "verification": "official_book_page_opened_not_full_book_reviewed"
+    },
+    {
+      "id": "hobbes",
+      "name": "Thomas Hobbes",
+      "references": [
+        "Leviathan, chapters XIII-XVIII and XXI"
+      ],
+      "concepts": [
+        "security",
+        "covenant",
+        "sovereignty"
+      ],
+      "interpretation_caveat": "Historical support for strong sovereignty is not a modern rights framework; acknowledge the tension.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "locke",
+      "name": "John Locke",
+      "references": [
+        "Second Treatise of Government, chapters II, V, IX, XIX",
+        "A Letter Concerning Toleration"
+      ],
+      "concepts": [
+        "consent",
+        "rights",
+        "limits on authority"
+      ],
+      "interpretation_caveat": "Historical exclusions and colonial entanglements limit claims that his framework was fully inclusive.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "rousseau",
+      "name": "Jean-Jacques Rousseau",
+      "references": [
+        "Discourse on the Origin and Foundations of Inequality",
+        "The Social Contract, books I-II"
+      ],
+      "concepts": [
+        "amour-propre",
+        "general will",
+        "civic freedom"
+      ],
+      "interpretation_caveat": "General will is not identical to any majority vote; coercive and exclusionary implications require scrutiny.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "marx",
+      "name": "Karl Marx",
+      "references": [
+        "Economic and Philosophic Manuscripts of 1844, Estranged Labour",
+        "Capital, volume I, chapters on the labour process and working day"
+      ],
+      "concepts": [
+        "alienation",
+        "class",
+        "production relations"
+      ],
+      "interpretation_caveat": "Structural analysis does not establish that every conflict has one cause or justify political violence.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "hayek",
+      "name": "Friedrich Hayek",
+      "references": [
+        "The Use of Knowledge in Society (1945)"
+      ],
+      "concepts": [
+        "dispersed knowledge",
+        "price signals",
+        "coordination"
+      ],
+      "interpretation_caveat": "Knowledge arguments do not establish that markets solve every externality, power imbalance, or equity problem.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "tocqueville",
+      "name": "Alexis de Tocqueville",
+      "references": [
+        "Democracy in America, volume I, part II; volume II, parts II and IV"
+      ],
+      "concepts": [
+        "associations",
+        "majority tyranny",
+        "democratic individualism"
+      ],
+      "interpretation_caveat": "His account has historical blind spots; participation does not automatically protect minorities.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "camus",
+      "name": "Albert Camus",
+      "references": [
+        "The Myth of Sisyphus",
+        "The Rebel"
+      ],
+      "concepts": [
+        "absurd",
+        "revolt",
+        "limits"
+      ],
+      "interpretation_caveat": "Absurdity is not a recommendation of despair; ethical revolt resists sacrificing people to abstractions.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "sartre",
+      "name": "Jean-Paul Sartre",
+      "references": [
+        "Being and Nothingness, discussion of bad faith",
+        "Existentialism Is a Humanism"
+      ],
+      "concepts": [
+        "bad faith",
+        "situated freedom",
+        "responsibility"
+      ],
+      "interpretation_caveat": "Freedom is exercised within material and social constraints; do not equate oppression with a chosen attitude.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "kierkegaard",
+      "name": "Soren Kierkegaard",
+      "references": [
+        "Either/Or",
+        "Fear and Trembling",
+        "The Sickness Unto Death"
+      ],
+      "concepts": [
+        "commitment",
+        "anxiety",
+        "selfhood"
+      ],
+      "interpretation_caveat": "Pseudonymous works explore distinct positions; faith is not a blanket warrant for overriding ethics.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "epictetus",
+      "name": "Epictetus",
+      "references": [
+        "Enchiridion, sections 1 and 5",
+        "Discourses, book I"
+      ],
+      "concepts": [
+        "judgment",
+        "agency",
+        "prohairesis"
+      ],
+      "interpretation_caveat": "The distinction of agency is not an instruction to tolerate injustice or suppress emotion.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "confucius",
+      "name": "Confucius",
+      "references": [
+        "Analects, books II, XII, XIII, XV"
+      ],
+      "concepts": [
+        "ren",
+        "li",
+        "reciprocity",
+        "remonstrance"
+      ],
+      "interpretation_caveat": "Role ethics has hierarchical dimensions; respectful criticism and contemporary equality must be distinguished.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "buddha",
+      "name": "Early Buddhist teachings associated with the Buddha",
+      "references": [
+        "Samyutta Nikaya 56.11, Discourse on Setting the Wheel of Dhamma in Motion",
+        "Majjhima Nikaya 58, discourse to Prince Abhaya"
+      ],
+      "concepts": [
+        "craving",
+        "dukkha",
+        "right speech"
+      ],
+      "interpretation_caveat": "Buddhist traditions differ; a modern advice exercise does not exhaust liberation, ethics, or meditation practice.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "sun_tzu",
+      "name": "Sun Tzu",
+      "references": [
+        "The Art of War, chapters III and VI"
+      ],
+      "concepts": [
+        "strategic assessment",
+        "indirect approach",
+        "economy of conflict"
+      ],
+      "interpretation_caveat": "Ancient military advice is adapted selectively; workplace conflicts are not literal wars.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "machiavelli",
+      "name": "Niccolo Machiavelli",
+      "references": [
+        "The Prince, chapters XV-XVIII",
+        "Discourses on Livy, book I"
+      ],
+      "concepts": [
+        "political necessity",
+        "appearance",
+        "institutions"
+      ],
+      "interpretation_caveat": "Acknowledge morally troubling arguments rather than presenting a fully humane historical doctrine.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "wollstonecraft",
+      "name": "Mary Wollstonecraft",
+      "references": [
+        "A Vindication of the Rights of Woman, chapters II-IV and XII"
+      ],
+      "concepts": [
+        "education",
+        "independence",
+        "equal moral agency"
+      ],
+      "interpretation_caveat": "Her account has period-specific limits; contemporary inclusive applications are editorial extensions.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "du_bois",
+      "name": "W. E. B. Du Bois",
+      "references": [
+        "The Souls of Black Folk, Of Our Spiritual Strivings",
+        "Black Reconstruction in America"
+      ],
+      "concepts": [
+        "double consciousness",
+        "racial hierarchy",
+        "democracy"
+      ],
+      "interpretation_caveat": "Double consciousness has a specific Black American history and is not merely generic self-consciousness.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "arendt",
+      "name": "Hannah Arendt",
+      "references": [
+        "The Human Condition, chapters on action",
+        "Eichmann in Jerusalem",
+        "Personal Responsibility Under Dictatorship"
+      ],
+      "concepts": [
+        "plurality",
+        "judgment",
+        "responsibility"
+      ],
+      "interpretation_caveat": "The banality of evil is a contested analysis, not a claim that wrongdoing is harmless or all perpetrators identical.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    },
+    {
+      "id": "ambedkar",
+      "name": "B. R. Ambedkar",
+      "references": [
+        "Annihilation of Caste",
+        "Constituent Assembly speech, 25 November 1949"
+      ],
+      "concepts": [
+        "caste",
+        "constitutional morality",
+        "social democracy"
+      ],
+      "interpretation_caveat": "Caste has institutional and inherited dimensions; it is not reducible to interpersonal prejudice.",
+      "reference_url": null,
+      "verification": "bibliographic_reference_not_passage_checked"
+    }
+  ]
+}

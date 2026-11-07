@@ -1,0 +1,31 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model checkpoints and weights
+checkpoints/
+models/checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Large or temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Node.js dependencies
+node_modules/

@@ -1,0 +1,54 @@
+{
+  "status": "passed_structural_checks_only",
+  "statistics": {
+    "examples": 80,
+    "thinkers": 30,
+    "single_perspective": 60,
+    "comparative": 12,
+    "boundary_or_correction": 8,
+    "splits": {
+      "train": 64,
+      "validation": 8,
+      "test": 8
+    },
+    "multi_turn_examples": 1,
+    "assistant_responses": 81,
+    "assistant_words_approx": 7194,
+    "direct_quotations": 0,
+    "independent_expert_review": false
+  },
+  "checks": {
+    "jsonl_parsing": true,
+    "expected_counts": true,
+    "unique_ids": true,
+    "unique_initial_prompts": true,
+    "alternating_roles": true,
+    "resolved_thinker_references": true,
+    "every_thinker_in_training": true,
+    "scenario_group_split_separation": true,
+    "messages_only_split_schema": true,
+    "direct_quotation_metadata_false": true
+  },
+  "not_checked": [
+    "independent scholarly accuracy",
+    "full passage alignment",
+    "plagiarism or copyright clearance",
+    "semantic duplication",
+    "model training outcomes",
+    "comprehensive safety"
+  ],
+  "assistant_words": {
+    "min": 80,
+    "max": 101,
+    "mean": 88.8
+  },
+  "sha256": {
+    "philosophy_strategy_full.jsonl": "64e22fa52137915538bcdc055c43c3fa2a46fdbebe89cc54cb4902afc0393e15",
+    "README.md": "d2525114bb48b5ba46cb3ae19e34428d1fcea29b290e69b0a6ba79dca63c6c39",
+    "review_index.csv": "683871d9d0f76fa54e3b7d4b071d0e4b30f0a67eae1f98dda7046956002dd7f7",
+    "sources.json": "e11faa28688c930847c695a9efcc874bf1a2d17cea0975b7edfa1d10a0207f1e",
+    "test.jsonl": "aca8e01251cdc7d19e072976ade9c554b1b0bb538610029865ff34fba29db414",
+    "train.jsonl": "6ccdbfec10f85edbfb59dbad2bb59be3692b411da3e1737d615976077e77556b",
+    "validation.jsonl": "91d60cad00378fe8ed02b0d35e700f35e01bac14e4237c89a29cbf07ae3d236f"
+  }
+}
