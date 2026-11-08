@@ -155,3 +155,12 @@ print("Input shape:", xb.shape)
 print("Embedding shape:", token_embeddings.shape)
 print("First token embedding:", token_embeddings[0, 0])
 
+### Adding positional information to the embeddings
+
+position_embedding_table = nn.Embedding(block_size, n_embd)
+positions = torch.arange(block_size)
+position_embeddings = position_embedding_table(positions)
+x = token_embeddings + position_embeddings
+print("Positions:", positions)
+print("Position embeddings shape:", position_embeddings.shape)
+print("Combined embeddings shape:", x.shape)
