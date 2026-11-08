@@ -142,5 +142,16 @@ def get_batch():
         y_batch.append(y)
     return torch.stack(x_batch), torch.stack(y_batch)
 xb, yb = get_batch()
-print("Input batch shape:", xb.shape)
-print("Target batch shape:", yb.shape)
+# print("Input batch shape:", xb.shape)
+# print("Target batch shape:", yb.shape)
+
+### Turning numbers into learnable vectors using an embedding layer
+
+import torch.nn as nn
+n_embd = 50
+token_embedding_table = nn.Embedding(vocab_size, n_embd)
+token_embeddings = token_embedding_table(xb)
+print("Input shape:", xb.shape)
+print("Embedding shape:", token_embeddings.shape)
+print("First token embedding:", token_embeddings[0, 0])
+
