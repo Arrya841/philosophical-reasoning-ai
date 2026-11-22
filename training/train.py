@@ -151,9 +151,9 @@ import torch.nn as nn
 n_embd = 50
 token_embedding_table = nn.Embedding(vocab_size, n_embd)
 token_embeddings = token_embedding_table(xb)
-print("Input shape:", xb.shape)
-print("Embedding shape:", token_embeddings.shape)
-print("First token embedding:", token_embeddings[0, 0])
+# print("Input shape:", xb.shape)
+# print("Embedding shape:", token_embeddings.shape)
+# print("First token embedding:", token_embeddings[0, 0])
 
 ### Adding positional information to the embeddings
 
@@ -161,6 +161,70 @@ position_embedding_table = nn.Embedding(block_size, n_embd)
 positions = torch.arange(block_size)
 position_embeddings = position_embedding_table(positions)
 x = token_embeddings + position_embeddings
-print("Positions:", positions)
-print("Position embeddings shape:", position_embeddings.shape)
-print("Combined embeddings shape:", x.shape)
+# print("Positions:", positions)
+# print("Position embeddings shape:", position_embeddings.shape)
+# print("Combined embeddings shape:", x.shape)
+
+### Self-Attention mechanism
+
+B, T, C = x.shape
+weights = torch.tril(torch.ones(T, T))
+weights = weights / weights.sum(dim=1, keepdim=True)
+# print("Attention weights:")
+# print(weights)
+out = weights @ x
+# print("Weights shape:", weights.shape)
+# print("Input shape:", x.shape)
+# print("Output shape:", out.shape)
+# print("First token before attention:", x[0, 1, :6])
+# print("First token after attention:", out[0, 1, :6])
+
+### Query, Key, Value matrices
+
+head_size = 25
+key = nn.Linear(n_embd, head_size, bias=False)
+query = nn.Linear(n_embd, head_size, bias=False)
+value = nn.Linear(n_embd, head_size, bias=False)
+k = key(x)
+q = query(x)
+v = value(x)
+# print("Input shape:", x.shape)
+# print("Query shape:", q.shape)
+# print("Key shape:", k.shape)
+# print("Value shape:", v.shape)
+attention_scores = q @ k.transpose(-2, -1)
+# print("Query shape:", q.shape)
+# print("Key shape:", k.shape)
+# print("Attention scores shape:", attention_scores.shape)
+# print("Attention scores for first sequence:")
+# print(attention_scores[0])
+import math
+scaled_attention_scores = attention_scores / math.sqrt(head_size)
+# print("Original scores:")
+# print(attention_scores[0, 0])
+# print("Scaled scores:")
+# print(scaled_attention_scores[0, 0])
+# print("Scaling factor:", math.sqrt(head_size))
+mask = torch.tril(torch.ones(T, T))
+masked_scores = scaled_attention_scores.masked_fill(
+    mask == 0,
+    float("-inf")
+)
+# print("Causal mask:")
+# print(mask)
+# print("Masked attention scores:")
+# print(masked_scores[0])
+attention_weights = torch.softmax(masked_scores, dim=-1)
+# print("Attention weights shape:", attention_weights.shape)
+# print("Attention weights for first sequence:")
+# print(attention_weights[0])
+# print("Sum of each row:")
+# print(attention_weights[0].sum(dim=-1))
+attention_output = attention_weights @ v
+# print("Attention weights shape:", attention_weights.shape)
+# print("Value shape:", v.shape)
+# print("Attention output shape:", attention_output.shape)
+# print("First token output:")
+# print(attention_output[0, 0])
+
+
