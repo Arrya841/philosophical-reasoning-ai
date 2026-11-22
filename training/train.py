@@ -227,4 +227,9 @@ attention_output = attention_weights @ v
 # print("First token output:")
 # print(attention_output[0, 0])
 
+### connecting model.py to this code
+from model import Head
+head = Head(n_embd=50, head_size=25, block_size=10)
+output = head(xb.new_empty(0)) if False else head(x)
+print("Attention head output shape:", output.shape)
 
