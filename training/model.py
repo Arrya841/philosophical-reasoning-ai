@@ -38,3 +38,22 @@ class Head(nn.Module):
         out = wei @ v
 
         return out
+
+class MultiHeadAttention(nn.Module):
+
+    def __init__(self, n_embd, num_heads, block_size):
+        super().__init__()
+
+        head_size = n_embd // num_heads
+
+        self.heads = nn.ModuleList([
+            Head(n_embd, head_size, block_size)
+            for _ in range(num_heads)
+        ])
+
+    def forward(self, x):
+        outputs = [head(x) for head in self.heads]
+
+        out = torch.cat(outputs, dim=-1)
+
+        return out
