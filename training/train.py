@@ -101,18 +101,18 @@ data_tensor = torch.tensor(encoded_text, dtype=torch.long)
 ### making gpt able to predict the next token in a sequence
 
 
-block_size = 10
-x = data_tensor[:block_size]
-y = data_tensor[1:block_size+1]
+# block_size = 10
+# x = data_tensor[:block_size]
+# y = data_tensor[1:block_size+1]
 # print("Input tokens:", x)
 # print("Target tokens:", y)
 # print("Input text:", decode(x.tolist()))
 # print("Target text:", decode(y.tolist()))
 
 
-for t in range(block_size):
-    context = x[:t+1]
-    target = y[t]
+# for t in range(block_size):
+#     context = x[:t+1]
+#     target = y[t]
     # print(
     #     f"Input: {decode(context.tolist())!r} "
     #     f"--> Target: {decode([target.item()])!r}"
